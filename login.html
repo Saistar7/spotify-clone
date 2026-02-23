@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Spotify Clone</title>
+  <link rel="stylesheet" href="login.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #121212;
+  color: white;
+}
+
+nav {
+  background: #1db954;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+.song {
+  background: #222;
+  padding: 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Spotify Clone</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="library.html">Library</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="loginform">
+  <h1>Login</h1>
+  
+  <form id="loginform">
+    
+    <input type="email" id="email" placeholder="Enter Email">
+    <div class="error" id="emailerror"></div>
+    
+    <input type="password" id="password" placeholder="Enter Password">
+    <div class="error" id="passworderror"></div>
+    
+    <button class="btn" type="submit">Login</button>
+    
+    <div class="success" id="successMsg"></div>
+    
+  </form>
+  
+  <p class="note">* Demo login (no backend)</p>
+</div>
+<script src="login.js"></script>
+</body>
+</html>

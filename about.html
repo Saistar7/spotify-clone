@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About - Spotify Clone</title>
+  <link rel="stylesheet" href="st.css">
+  <style>/* reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+/* body */
+body {
+background: #121212;
+color: white;
+min-height: 100vh;
+}
+
+/* navbar */
+nav {
+background: #1db954;
+padding: 15px 25px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav h2 {
+font-size: 22px;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 18px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-size: 14px;
+transition: 0.2s;
+}
+
+nav a:hover {
+opacity: 0.8;
+}
+
+/* container card */
+.container {
+max-width: 800px;
+margin: 50px auto;
+background: #181818;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* heading */
+.container h1 {
+margin-bottom: 20px;
+color: #1db954;
+text-align: center;
+}
+
+/* paragraphs */
+.container p {
+margin: 12px 0;
+line-height: 1.6;
+color: #ddd;
+}
+
+/* developer highlight */
+.container strong {
+color: #1db954;
+}
+
+/* mobile responsive */
+@media (max-width: 600px) {
+.container {
+margin: 25px 15px;
+padding: 20px;
+}
+
+nav ul {
+gap: 10px;
+font-size: 12px;
+}
+}</style>
+</head>
+<body>
+
+<nav>
+  <h2>Spotify Clone</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="library.html">Library</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="login.html">Login</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>About This Project</h1>
+  <p>This Spotify Clone is built using HTML, CSS and JavaScript.</p>
+  <p>It allows users to play songs and navigate through pages.</p>
+  <p><strong>Developer:</strong> Saiprasad Gurav</p>
+</div>
+
+</body>
+</html>
